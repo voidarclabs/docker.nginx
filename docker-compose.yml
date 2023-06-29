@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 90:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+    container_name: nginx
+    restart: always
+
+    
